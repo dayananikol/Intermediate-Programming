@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class BasicOperations {
+	
+	public static void main(String[] args) {
+		
+//	Basic Operations = 0/2
+	
+//		System.out.println("Input numbers: ");
+//		Scanner sc = new Scanner (System.in);
+//		
+//			double x1 = sc.nextDouble();
+//			double y1 = sc.nextDouble();
+//			double x2 = sc.nextDouble();
+//			double y2 = sc.nextDouble();
+//				double distance = Math.sqrt((y2 - y1) * (y2 - y1) + (x2 - x1) * (x2 - x1));
+//				
+//			System.out.print("Distance:" + distance);
+			
+//	Conditional Structure = 1/1
+		
+			System.out.println("Enter a year: ");
+			Scanner sc = new Scanner (System.in);
+			
+			int year = sc.nextInt();
+			
+				if (year % 4 == 0 && year % 100!= 0 || (year % 400 == 0)) {
+					System.out.print(year + " is a leap year");
+				
+				} else {
+					System.out.print(year + " is not a leap year");
+				}
+					
+			}
+		
+	}
