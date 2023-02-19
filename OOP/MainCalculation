@@ -1,0 +1,13 @@
+package grr;
+
+public class Triangle{
+	
+	public static void main(String[] args) {
+		
+		Perimeter x = new Perimeter (3, 4, 5);
+		System.out.println(x.sideA + x.sideB + x.sideC );
+		
+		
+	}
+
+}
