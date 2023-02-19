@@ -1,0 +1,19 @@
+package grr; 
+
+public class Perimeter{
+	
+	int sideA;
+	int sideB;
+	int sideC;
+	
+Perimeter (int a, int b, int c){
+	
+	this.sideA = a;
+	this.sideB = b;
+	this.sideC = c;
+  
+    }
+		
+}
+	
+
