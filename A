@@ -1,0 +1,122 @@
+package ShortQuiz;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Id Number: ");
+		int IdNumber = sc.nextInt();
+		
+		System.out.println("First Name: ");
+		String firstName = sc.nextLine();
+		
+		System.out.println("Last Name: ");
+		String lastName = sc.nextLine();
+		
+		System.out.println("Student Type: ");
+		String studentType = sc.nextLine();
+		
+		
+		boolean Discounted = true;
+		boolean Continuing = true;
+		
+		int tuitionFee = 0;
+		String courseName = " ";
+		
+		if (Discounted){
+			System.out.println("What is your course?");
+			String studentType1 = sc.nextLine();
+			
+			switch (studentType1) {
+				
+			case "TOURISM":
+				courseName = "Tourism";
+				tuitionFee = 16250;
+				break;
+			case "COMPUTER SCIENCE":
+				courseName = "Computer Science";
+				tuitionFee = 21700;
+				break;
+			case "ENGINEERING":
+				courseName = "Engineering";
+				tuitionFee = 49500;
+				break;
+				
+			default:
+                System.out.println("Invalid");
+                return;
+			
+			}
+			
+			System.out.println("Tuition Fee(Computation): " + tuitionFee);
+		}
+			
+		else if (Continuing){
+			System.out.println("What is your course?");
+			String studentType2 = sc.nextLine();
+			
+			switch (studentType2) {
+				
+			case "NURSING":
+				courseName = "Nursing";
+				tuitionFee = 28500;
+				break;
+			case "ARCHITECTURE":
+				courseName = "Architecture";
+				tuitionFee = 48000;
+				break;
+				
+			default:
+                System.out.println("Invalid Order");
+                return;
+		}
+			
+			System.out.println("Tuition Fee(Computation): " + tuitionFee);
+			
+	}
+		
+		else {
+			System.out.println("Sorry your desired course is not available.");
+			}
+		
+		
+		
+		Student x = new Student (tuitionFee);
+		Student y = new Student (tuitionFee);
+		Student z = new Student (tuitionFee);
+		Student a = new Student (tuitionFee);
+		Student b = new Student (tuitionFee);
+		
+				
+//		System.out.println("FOR DISCOUNTED STUDENTS: " + "\n" + "Id Number: " + x.IdNumber + "\n" + "First Name: " + x.firstName + "\n" + "Last Name: " + x.lastName + "\n" + "Student Type: " + x.studentType + "\n" + "Course: " + x.studentType + "\n" + );
+//		System.out.println("Id Number: " + y.IdNumber + "\n" + "First Name: " + y.firstName + "\n" + "Last Name: " + y.lastName + "\n" + "Student Type: " + y.studentType + "\n" + "Course: " + y.studentType + "\n");
+//		System.out.println("Id Number: " + z.IdNumber + "\n" + "First Name: " + z.firstName + "\n" + "Last Name: " + z.lastName + "\n" + "Student Type: " + z.studentType + "\n" + "Course: " + z.studentType + "\n");
+//		System.out.println("FOR CONTINUING STUDENTS: \" + \"\\n\" + \"Id Number: " + a.IdNumber + "\n" + "First Name: " + a.firstName + "\n" + "Last Name: " + a.lastName + "\n" + "Student Type: " + a.studentType + "\n" + "Course: " + a.studentType + "\n");
+//		System.out.println("Id Number: " + b.IdNumber + "\n" + "First Name: " + b.firstName + "\n" + "Last Name: " + b.lastName + "\n" + "Student Type: " + b.studentType + "\n" + "Course: " + b.studentType + "\n");
+//		
+		//		System.out.println("Good day! Welcome to Honorata National School! Are you a continuing student or a walk-in student?");
+//		String input = sc.nextLine();
+//		
+//		boolean continuingStudent = true;
+//		boolean walk_inStudent = true;
+//		
+//		if (continuingStudent){
+//			System.out.println("What is your course?");
+//			String course = sc.nextLine();
+//		}
+//			
+//		if (walk_inStudent){
+//			System.out.println("What is your course?");
+//			String course1 = sc.nextLine();
+//		}
+//		
+//		else {
+//			System.out.println("Sorry your desired course is not available.");
+//			}
+		}
+		
+	}
